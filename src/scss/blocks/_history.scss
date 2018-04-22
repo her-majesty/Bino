@@ -1,0 +1,39 @@
+.history {
+    background-color: $primaryBgColor;
+    display:flex;
+    justify-content: space-between;
+
+    &__picture {
+        
+        & > img{
+         width:100%;
+        object-fit: cover;
+    }
+
+}
+}
+
+.our-history {
+    width:60%;
+    padding-left: 50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    font-family: $secondaryFont;
+    color: $mainFontColor;
+
+    & > h2 {
+        padding-left:20px;
+        border-left: 6px solid $secondaryBgColor;
+    }
+
+    & > p {
+        font-size: 1.17rem;
+    }
+
+    & .button {
+    width:225px;
+    background-color: $secondaryBgColor;
+    border:none;
+    }
+}
