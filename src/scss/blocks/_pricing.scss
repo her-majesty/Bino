@@ -83,3 +83,23 @@
             margin:auto;       }
     }
 }
+
+//INTERACTIVITY 
+
+.tariffs__block:hover {
+
+    & .tariffs__block-label {
+        background-color: $secondaryBgColor;
+        
+    }
+
+    & .tariffs__block-price > span {
+
+        color: $secondaryBgColor;
+       
+      }
+
+    & .button {
+        background-color: $secondaryBgColor;
+            }
+}

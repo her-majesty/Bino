@@ -1,0 +1,13 @@
+.integrations {
+    background-color: $primaryBgColor;
+    &__block-logos {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        & > img:hover {
+        filter:invert(1);
+        background-color: #18b3c3
+        }
+    }
+}

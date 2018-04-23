@@ -31,6 +31,7 @@ h2 {
   text-transform: uppercase;
   color: #f4f5f9;
   border: 1px solid white;
+  box-sizing: border-box;
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 700; }
@@ -110,7 +111,7 @@ h2 {
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 50%);
-    background-color: #fff;
+    background-color: #f4f5f9;
     background-image: url("../img/anchor.png");
     background-repeat: no-repeat;
     background-size: center;
@@ -317,3 +318,23 @@ h2 {
       background-color: #999999;
       display: block;
       margin: auto; }
+
+.tariffs__block:hover .tariffs__block-label {
+  background-color: #e74c3c; }
+
+.tariffs__block:hover .tariffs__block-price > span {
+  color: #e74c3c; }
+
+.tariffs__block:hover .button {
+  background-color: #e74c3c; }
+
+.integrations {
+  background-color: #f4f5f9; }
+  .integrations__block-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px; }
+    .integrations__block-logos > img:hover {
+      filter: invert(1);
+      background-color: #18b3c3; }
