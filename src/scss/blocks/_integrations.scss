@@ -5,9 +5,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 10px;
-        & > img:hover {
-        filter:invert(1);
-        background-color: #18b3c3
-        }
+        padding-top:50px;
+        
+        & > img {
+            background-color: #fff;       
+         }
     }
 }

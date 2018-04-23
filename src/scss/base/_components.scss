@@ -66,3 +66,27 @@ position:relative;
         }
     }
     }
+
+//H1-H6 headers
+
+h1 {
+    font-family: $primaryFont;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+h2 {
+    font-size:3rem;
+    font-family: $secondaryFont;
+    color: $mainFontColor;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  h3 {
+    font-size:2rem;
+    font-family: $primaryFont;
+    color: $secondaryBgColor;
+    text-transform: uppercase;
+  }
