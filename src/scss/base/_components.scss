@@ -1,19 +1,45 @@
 .button {
-min-width:225px;
-min-height:55px;
-background-color: transparent;
 text-transform: uppercase;
-color: $secondaryFontColor;
+color: $lightestColor;
 border: 1px solid white;
 box-sizing: border-box;
 font-family: $primaryFont;
-font-size: 14px;
+font-size: 1.17 rem;
 font-weight: 700;
- &:hover {
+transition: all 0.3s;
+
+&:focus {
+outline: none;
+}
+
+&-transparent {
+
+    min-width:225px;
+    min-height:55px;
+    background-color: transparent;
+
+    &:hover {
     background-color: $secondaryBgColor;
     border:none;
  }
 }
+&-red {
+    min-width:225px;
+    min-height:55px;
+    background-color: $secondaryBgColor; 
+    }
+&-grey {
+    width: 145px;
+    height:45px;
+    background-color: $thirdBgColor;
+    display:block; 
+    margin:auto;  
+    &:hover {
+        background-color: $secondaryBgColor; 
+    }
+}
+}
+
 
 .separator {
 width: 10px;
@@ -27,7 +53,7 @@ position:relative;
      width: 80px;
      height:2px;
      box-sizing: border-box;
-     border: 1px solid $primaryBgColor;
+     border: 1px solid $lightestColor;
      position:absolute;
 
  }

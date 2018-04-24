@@ -7,7 +7,7 @@
     &__block {
         width:32%;
         height:610px;
-        background-color: $primaryBgColor;
+        background-color: $lightestColor;
         position: relative;
 
         &-label {
@@ -16,7 +16,7 @@
             font-family: $primaryFont;
             font-size: 2rem;
             text-align:center;
-            color: $secondaryFontColor;
+            color: $lightestColor;
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight:400;
@@ -57,7 +57,7 @@
             width: 150px;
             height:150px;
             border-radius:50%;
-            background-color: $primaryBgColor;
+            background-color: $lightestColor;
             opacity: 0.25;
                 
                
@@ -75,12 +75,6 @@
             color: $mainFontColor;
 
         }
-        & .button {
-            width: 145px;
-            height:45px;
-            background-color: $thirdBgColor;
-            display:block; 
-            margin:auto;       }
     }
 }
 
@@ -98,8 +92,9 @@
         color: $secondaryBgColor;
        
       }
-
-    & .button {
+    
+     & .button {
         background-color: $secondaryBgColor;
-            }
+        //background-blend-mode:overlay;
+        }
 }

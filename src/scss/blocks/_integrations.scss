@@ -1,5 +1,5 @@
 .integrations {
-    background-color: $primaryBgColor;
+    background-color: $lightestColor;
     &__block-logos {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -8,7 +8,13 @@
         padding-top:50px;
         
         & > img {
-            background-color: #fff;       
+            background-color: white;;
+            background-blend-mode: darken;
+            transition: all 0.3s;
+            &:hover {
+                background-color: $secondaryBgColor;
+                background-blend-mode: overlay;
+            }
          }
     }
 }

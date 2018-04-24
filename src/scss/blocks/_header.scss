@@ -37,7 +37,7 @@
             left:50%;
             bottom:0;
             transform: translate(-50%, 50%);
-            background-color: $primaryBgColor;
+            background-color: $lightestColor;
             background-image: url('../img/anchor.png');
             background-repeat: no-repeat;
             background-size: center;
@@ -86,7 +86,7 @@
 .header__bottom {
     width:80%;
     margin: 50px auto;
-    color: $secondaryFontColor;
+    color: $lightestColor;
     display:flex;
     flex-direction: column;
     justify-content: center;

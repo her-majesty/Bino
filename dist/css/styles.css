@@ -18,19 +18,35 @@ h1, h2, h3 {
   padding: 0; }
 
 .button {
-  min-width: 225px;
-  min-height: 55px;
-  background-color: transparent;
   text-transform: uppercase;
   color: #f4f5f9;
   border: 1px solid white;
   box-sizing: border-box;
   font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 700; }
-  .button:hover {
-    background-color: #e74c3c;
-    border: none; }
+  font-size: 1.17 rem;
+  font-weight: 700;
+  transition: all 0.3s; }
+  .button:focus {
+    outline: none; }
+  .button-transparent {
+    min-width: 225px;
+    min-height: 55px;
+    background-color: transparent; }
+    .button-transparent:hover {
+      background-color: #e74c3c;
+      border: none; }
+  .button-red {
+    min-width: 225px;
+    min-height: 55px;
+    background-color: #e74c3c; }
+  .button-grey {
+    width: 145px;
+    height: 45px;
+    background-color: #999999;
+    display: block;
+    margin: auto; }
+    .button-grey:hover {
+      background-color: #e74c3c; }
 
 .separator {
   width: 10px;
@@ -318,12 +334,6 @@ h3 {
       align-items: center;
       font-family: "Open Sans";
       color: #6a6a6a; }
-    .tariffs__block .button {
-      width: 145px;
-      height: 45px;
-      background-color: #999999;
-      display: block;
-      margin: auto; }
 
 .tariffs__block:hover .tariffs__block-label {
   background-color: #e74c3c; }
@@ -343,7 +353,12 @@ h3 {
     grid-gap: 10px;
     padding-top: 50px; }
     .integrations__block-logos > img {
-      background-color: #fff; }
+      background-color: white;
+      background-blend-mode: darken;
+      transition: all 0.3s; }
+      .integrations__block-logos > img:hover {
+        background-color: #e74c3c;
+        background-blend-mode: overlay; }
 
 .contacts {
   background-color: #343434; }
@@ -386,9 +401,7 @@ h3 {
   .contacts__block-form .button {
     min-width: 155px;
     min-height: 45px;
-    margin-top: 20px;
-    background-color: #e74c3c;
-    border: none; }
+    margin-top: 20px; }
 
 .footer {
   min-height: 90px;
@@ -396,7 +409,8 @@ h3 {
   background-color: #202020;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .footer .icons {
     display: flex;
     justify-content: space-between;
@@ -410,3 +424,15 @@ h3 {
   .footer .copyright {
     color: #999999;
     font-size: 2rem; }
+  .footer .return {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 20px;
+    top: -25px;
+    background-color: #e74c3c;
+    background-image: url("../img/angle-up.png");
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center; }

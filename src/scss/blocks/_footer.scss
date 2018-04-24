@@ -5,10 +5,13 @@
     display:flex;
     justify-content: space-between;
     align-items: center; 
+    position:relative;
+
     & .icons {
         display:flex;
         justify-content: space-between;
         width:30%;
+
         & .icon  {
             color: $thirdBgColor;
             font-size:2rem;
@@ -18,8 +21,25 @@
             }
         }
     }
+    
     & .copyright {
         color: $thirdBgColor;
         font-size:2rem;
     }
+   
+    
+    & .return {
+        
+            position:absolute;
+            width: 50px;
+            height:50px;
+            border-radius:50%;
+            right:20px;
+            top: -25px;
+            background-color: $secondaryBgColor;
+            background-image: url('../img/angle-up.png');
+            background-repeat: no-repeat;
+            background-size: center;
+            background-position: center;
+}
 }
